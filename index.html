@@ -7,9 +7,10 @@
   <title>Clube VIP Barbearia — Imagem Impecável Sem Filas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <style>
-    /* ─── RESET & BOX SIZING ────────────────────────── */
+    /* RESET & BOX SIZING  */
     *,
     *::before,
     *::after {
@@ -18,7 +19,7 @@
       padding: 0;
     }
 
-    /* ─── DESIGN TOKENS (ORDEM DESIGN SYSTEM) ────────── */
+    /*  DESIGN TOKENS (ORDEM DESIGN SYSTEM) */
     :root {
       /* Backgrounds */
       --color-bg: #05070A;
@@ -66,7 +67,7 @@
       /* Shadows */
       --shadow-sm: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
       --shadow-md: rgba(0, 0, 0, 0.05) 0 1px 0, rgba(0, 0, 0, 0.10) 0 4px 4px,
-                   rgba(0, 0, 0, 0.15) 0 10px 10px, rgba(0, 0, 0, 0.10) 0 -1px 0 inset;
+        rgba(0, 0, 0, 0.15) 0 10px 10px, rgba(0, 0, 0, 0.10) 0 -1px 0 inset;
       --shadow-lg: rgba(0, 0, 0, 0.35) 0px 40px 80px 0px;
       --shadow-glow: rgba(0, 161, 255, 0.25) 0px 0px 24px 0px;
 
@@ -96,13 +97,11 @@
       inset: 0;
       pointer-events: none;
       z-index: 9999;
-      background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 1px,
-        transparent 1px,
-        transparent 2px
-      );
+      background: repeating-linear-gradient(0deg,
+          rgba(0, 0, 0, 0.03) 0px,
+          rgba(0, 0, 0, 0.03) 1px,
+          transparent 1px,
+          transparent 2px);
     }
 
     /* ─── TOP NAV ───────────────────────────────────── */
@@ -168,10 +167,13 @@
     }
 
     @keyframes pulse {
-      0%, 100% {
+
+      0%,
+      100% {
         opacity: 1;
         transform: scale(1);
       }
+
       50% {
         opacity: 0.4;
         transform: scale(0.85);
@@ -251,7 +253,7 @@
       position: absolute;
       inset: 0;
       z-index: 0;
-      background: 
+      background:
         radial-gradient(ellipse 70% 60% at 75% 35%,
           rgba(0, 64, 255, 0.20) 0%,
           rgba(0, 161, 255, 0.08) 45%,
@@ -270,7 +272,7 @@
       inset: 0;
       z-index: 0;
       opacity: 0.035;
-      background-image: 
+      background-image:
         linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px);
       background-size: 40px 40px;
@@ -705,17 +707,22 @@
         grid-template-columns: 1fr;
         gap: 36px;
       }
+
       .hero h1 {
         font-size: 38px;
         letter-spacing: -1.5px;
       }
+
       .hero-meta-bar {
         grid-template-columns: 1fr 1fr;
       }
+
       .topnav-links {
         display: none;
       }
-      .topnav, .hero {
+
+      .topnav,
+      .hero {
         padding-left: 20px !important;
         padding-right: 20px !important;
       }
@@ -726,20 +733,26 @@
         font-size: 30px;
         letter-spacing: -1px;
       }
+
       .hero-actions {
         flex-direction: column;
         align-items: stretch;
       }
-      .btn-primary, .btn-secondary {
+
+      .btn-primary,
+      .btn-secondary {
         justify-content: center;
       }
+
       .hero-meta-bar {
         grid-template-columns: 1fr;
       }
+
       .trust-box {
         flex-direction: column;
         align-items: flex-start;
       }
+
       .trust-stars {
         border-right: none;
         border-bottom: 1px solid var(--color-border);
@@ -763,7 +776,8 @@
     </div>
     <nav class="topnav-links">
       <a href="#beneficios" class="topnav-link" onclick="showToast('Rolando para os Benefícios')">O Clube</a>
-      <a href="#experiencia" class="topnav-link" onclick="showToast('Protocolo de Barboterapia &amp; Lounge')">Experiência</a>
+      <a href="#experiencia" class="topnav-link"
+        onclick="showToast('Protocolo de Barboterapia &amp; Lounge')">Experiência</a>
       <a href="#depoimentos" class="topnav-link" onclick="showToast('Ver Depoimentos Reais')">Avaliações</a>
       <a href="#garantia" class="topnav-link" onclick="showToast('Garantia Blindada de 7 Dias')">Garantia</a>
       <a href="#assinar" class="topnav-cta" onclick="showToast('Redirecionando para Adesão VIP')">→ Quero Minha Vaga</a>
@@ -796,7 +810,9 @@
 
             <!-- Subheadline -->
             <p class="hero-sub">
-              Entre no <strong>Clube VIP da Barbearia</strong>: garanta cortes e alinhamentos de barba ilimitados, atendimento prioritário com horário marcado no app e a certeza matemática de nunca mais ser pego de surpresa com a aparência desleixada antes de uma reunião decisiva.
+              Entre no <strong>Clube VIP da Barbearia</strong>: garanta cortes e alinhamentos de barba ilimitados,
+              atendimento prioritário com horário marcado no app e a certeza matemática de nunca mais ser pego de
+              surpresa com a aparência desleixada antes de uma reunião decisiva.
             </p>
 
             <!-- Ações Principais -->
@@ -820,7 +836,8 @@
                 <span>★★★★★</span> 4.9/5.0
               </div>
               <div class="trust-text">
-                Mais de <strong>650 cavalheiros atendidos</strong> | Eleita a barbearia com melhor experiência e pontualidade da região.
+                Mais de <strong>650 cavalheiros atendidos</strong> | Eleita a barbearia com melhor experiência e
+                pontualidade da região.
               </div>
             </div>
           </div>
@@ -853,7 +870,8 @@
                   <span class="feature-icon">▪</span>
                   <div>
                     <strong>Cortes &amp; Barba Ilimitados</strong>
-                    <span class="feature-desc">Mantenha degradê cirúrgico e barba alinhada quantas vezes precisar.</span>
+                    <span class="feature-desc">Mantenha degradê cirúrgico e barba alinhada quantas vezes
+                      precisar.</span>
                   </div>
                 </li>
                 <li class="vip-feature-item">
@@ -867,7 +885,8 @@
                   <span class="feature-icon">▪</span>
                   <div>
                     <strong>Agendamento no App VIP com Fila Zero</strong>
-                    <span class="feature-desc">Agende em 60 segundos pelo celular. Cadeira pronta na hora marcada.</span>
+                    <span class="feature-desc">Agende em 60 segundos pelo celular. Cadeira pronta na hora
+                      marcada.</span>
                   </div>
                 </li>
                 <li class="vip-feature-item">
